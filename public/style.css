@@ -120,3 +120,11 @@ body {
   font-style: 18px;
   font-family: var(--ff-primary);
 }
+
+/* page styles */
+.container {
+  max-width: 20rem; /* open for change */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.2rem;
+}
