@@ -96,6 +96,7 @@ button,
 /* variables */
 :root {
   --ff-primary: "Kumbh Sans", sans-serif;
+  --fs-150: calc(var(--fs-400) * 0.7);
   --fs-300: calc(var(--fs-400) * 0.9);
   --fs-400: 1rem;
   --fs-700: calc(var(--fs-400) * 1.2);
@@ -150,7 +151,7 @@ h6 {
 
 .card__body {
   text-align: center;
-  padding: 4rem 0.5rem;
+  padding: 4rem 0 1rem;
 }
 
 .card__body .name {
@@ -165,4 +166,19 @@ h6 {
 
 .card__body .location {
   display: block;
+}
+
+.card__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1.2em;
+  border-top: 2px solid hsl(0, 0%, 88%);
+}
+
+.card__footer > * {
+  font-size: var(--fs-150);
+  text-align: center;
+  letter-spacing: 0.1rem;
 }
