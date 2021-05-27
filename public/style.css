@@ -38,16 +38,6 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  line-height: 1;
-}
-
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -108,7 +98,7 @@ button,
   --ff-primary: "Kumbh Sans", sans-serif;
   --fs-300: calc(var(--fs-400) * 0.9);
   --fs-400: 1rem;
-  --fs-700: calc(var(--fs-400) * 1.5);
+  --fs-700: calc(var(--fs-400) * 1.2);
   --clr-neutral-700: hsl(0, 0%, 59%);
   --clr-primary-400: hsl(185, 75%, 39%);
   --clr-primary-700: hsl(227, 10%, 46%);
@@ -119,9 +109,21 @@ button,
 body {
   font-size: 18px;
   font-family: var(--ff-primary);
+  color: var(--clr-neutral-700);
   background: var(--clr-primary-400);
   display: grid;
   place-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+  line-height: 1;
 }
 
 .card {
@@ -144,4 +146,23 @@ body {
   transform: translate(-50%, 50%);
   border: 6px solid hsl(0, 0%, 100%);
   border-radius: 999rem;
+}
+
+.card__body {
+  text-align: center;
+  padding: 4rem 0.5rem;
+}
+
+.card__body .name {
+  display: inline-block;
+  font-size: var(--fs-700);
+}
+
+.card__body .age {
+  display: inline-block;
+  font-size: var(--fs-700);
+}
+
+.card__body .location {
+  display: block;
 }
