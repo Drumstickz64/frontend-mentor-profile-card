@@ -109,7 +109,7 @@ button,
 /* base styles */
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   font-size: 18px;
@@ -210,4 +210,13 @@ small {
 .card__footer small {
   font-size: var(--fs-150);
   letter-spacing: 0.1rem;
+}
+@media only screen and (min-width: 80rem) {
+  .pattern:first-of-type {
+    transform: translate(-25%, -60%);
+  }
+
+  .pattern:last-of-type {
+    transform: translate(17%, 70%);
+  }
 }
