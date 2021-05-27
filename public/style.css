@@ -102,3 +102,18 @@ button,
     scroll-behavior: auto !important;
   }
 }
+
+/* variables */
+:root {
+  --ff-primary: "Kumbh Sans", sans-serif;
+  --fs-300: calc(var(--fs-400) * 0.9);
+  --fs-400: 1rem;
+  --fs-700: calc(var(--fs-400) * 1.5);
+  --clr-neutral-700: hsl(0, 0%, 59%);
+}
+
+/* base styles */
+body {
+  font-style: 18px;
+  font-family: var(--ff-primary);
+}
