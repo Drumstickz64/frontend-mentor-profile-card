@@ -110,6 +110,9 @@ button,
   --fs-400: 1rem;
   --fs-700: calc(var(--fs-400) * 1.5);
   --clr-neutral-700: hsl(0, 0%, 59%);
+  --clr-primary-400: hsl(185, 75%, 39%);
+  --clr-primary-700: hsl(227, 10%, 46%);
+  --clr-primary-900: hsl(229, 23%, 23%);
 }
 
 /* base styles */
