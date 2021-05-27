@@ -127,6 +127,10 @@ h6 {
   line-height: 1;
 }
 
+small {
+  font-size: var(--fs-300);
+}
+
 .card {
   width: 18.75rem;
   background: hsl(0, 0%, 100%);
@@ -178,7 +182,10 @@ h6 {
 }
 
 .card__footer > * {
-  font-size: var(--fs-150);
   text-align: center;
+}
+
+.card__footer small {
+  font-size: var(--fs-150);
   letter-spacing: 0.1rem;
 }
