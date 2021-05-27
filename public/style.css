@@ -117,14 +117,16 @@ button,
 
 /* base styles */
 body {
-  font-style: 18px;
+  font-size: 18px;
   font-family: var(--ff-primary);
+  background: var(--clr-primary-400);
+  display: grid;
+  place-items: center;
 }
 
-/* page styles */
-.container {
-  max-width: 20rem; /* open for change */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1.2rem;
+.card {
+  width: 18.75rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
